@@ -1,0 +1,11 @@
+<h1 class="container"><%= @product.name %></h1>
+
+<div class="container">
+<%= image_tag(@product.img_url, :width => 50) %><br />
+
+$<%= @product.price %>
+
+<p>
+<%= @product.description %>
+</p>
+</div>

@@ -47,4 +47,12 @@ gem 'faker'
 
 end
 
+  gem 'bootstrap-sass'
+  gem 'paperclip'
+  gem 'omniauth-facebook'
+  gem 'devise'
+
+
+  gem 'autoprefixer-rails'
+
 

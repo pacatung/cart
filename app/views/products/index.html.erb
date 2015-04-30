@@ -1,5 +1,14 @@
-<h1>index.html</h1>
+<h1 class="container">index.html</h1>
 
-<%= @products.each do |product| %>
-  <% link_to product_path(product) do %>
-    <%= img_tag
+<div class="product container">
+<% @products.each do |product| %>
+  <%= link_to product_path(product) do %>
+    <%= image_tag(product.img_url, :width=>50) %> <br>
+  <% end %>
+
+
+<%= product.name %>
+<%= product.price %>
+<br>
+<% end %>
+</div>
