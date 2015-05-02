@@ -1,14 +1,14 @@
 <h1 class="container">index.html</h1>
 
 <div class="container">
-  <%= link_to 'New Post', products_path, :class=>"btn btn-danger" %>
+  <%= link_to 'New Post', new_product_path, :class=>"btn btn-danger" %>
 </div>
 
 <div class="container">
 <% @products.each do |product| %>
 <div class="products">
   <%= link_to product_path(product) do %>
-    <%= image_tag(product.img_url, :width=>50) %> <br>
+    <%= image_tag(product.img_url, :width=>100) %> <br>
   <% end %>
 
 
@@ -17,5 +17,8 @@
 <br>
 </div>
 <% end %>
+<!-- <div style="clear: both"></div> -->
+<div class="clearfix"></div>
+<%= paginate @products %>
 
 </div>

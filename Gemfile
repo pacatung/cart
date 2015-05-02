@@ -54,5 +54,5 @@ end
 
 
   gem 'autoprefixer-rails'
-
+  gem 'kaminari'
 
