@@ -1,14 +1,21 @@
 <h1 class="container">index.html</h1>
 
-<div class="product container">
+<div class="container">
+  <%= link_to 'New Post', products_path, :class=>"btn btn-danger" %>
+</div>
+
+<div class="container">
 <% @products.each do |product| %>
+<div class="products">
   <%= link_to product_path(product) do %>
     <%= image_tag(product.img_url, :width=>50) %> <br>
   <% end %>
 
 
-<%= product.name %>
+<%= product.name %> <br>
 <%= product.price %>
 <br>
+</div>
 <% end %>
+
 </div>
